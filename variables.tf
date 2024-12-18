@@ -22,3 +22,9 @@ variable "date_created" {
   #default     = "2024-12-18"  # Replace with current date in YYYY-MM-DD format
   default = substr(timestamp(), 0, 10)
 }
+
+variable "prefix" {
+  type        = string
+  description = "Prefix for all resource names"
+  default     = "demo"
+}
